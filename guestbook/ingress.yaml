@@ -11,9 +11,10 @@ metadata:
     # nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 spec:
   rules:
-  - http:
+  - host: "guestbook-be.local"
+    http:
       paths:
-      -  path: /gb
+      -  path: /
          pathType: Prefix
          backend:
            service:
