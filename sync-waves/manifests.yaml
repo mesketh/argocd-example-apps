@@ -67,6 +67,8 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
   name: frontend
+  labels:
+    my-test-label: ignored
   annotations:
     argocd.argoproj.io/sync-wave: "2"
 spec:
