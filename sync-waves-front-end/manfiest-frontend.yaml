@@ -5,7 +5,7 @@ metadata:
   labels:
     my-test-label: ignored
   annotations:
-    argocd.argoproj.io/sync-wave: "20"
+    argocd.argoproj.io/sync-wave: "200"
 spec:
   replicas: 1
   selector:
@@ -25,7 +25,7 @@ kind: Service
 metadata:
   name: frontend
   annotations:
-    argocd.argoproj.io/sync-wave: "21"
+    argocd.argoproj.io/sync-wave: "210"
 spec:
   selector:
     tier: frontend
