@@ -11,7 +11,7 @@ spec:
       containers:
         - name: upgrade-sql-schema
           image: alpine:latest
-          command: ["exit", "3"]
+          command: ["sh", "-c", "exit 3"]
       restartPolicy: Never
 ---
 apiVersion: apps/v1
